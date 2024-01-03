@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  --background: 200 227 235;
+  --foreground: 0 0 0;
+  --primary: 255 215 0;
+}
+
+.dark {
+  --background: 0 48 143;
+  --foreground: 255 255 255;
+  --primary: 171 69 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 0 34 68;
+    --foreground: 255 255 255;
+    --primary: 226 167 64;
+  }
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  overflow-x: hidden;
+}
