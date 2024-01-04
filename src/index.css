@@ -32,3 +32,21 @@ body {
   color: rgb(var(--foreground));
   overflow-x: hidden;
 }
+
+#menu-icon {
+  @apply flex relative bg-foreground w-5 h-1 rounded-xl mt-2;
+}
+
+#menu-icon::before {
+  content: " ";
+  @apply bg-foreground w-8 h-1 rounded-xl absolute -top-3 left-0;
+}
+
+#closed-icon {
+  @apply flex relative bg-foreground w-6 h-1 rotate-45 rounded-xl mt-2;
+}
+
+#closed-icon::before {
+  content: " ";
+  @apply bg-foreground w-6 h-1 rounded-xl rotate-90 absolute left-0;
+}
