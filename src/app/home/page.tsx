@@ -20,7 +20,7 @@ const HomePage = () => {
           .
         </p>
         <Link
-          to="/bus"
+          to="/search"
           className="w-fit my-8 bg-blue-600 text-white px-4 py-2 text-lg rounded-full font-semibold"
         >
           Chercher des Bus
