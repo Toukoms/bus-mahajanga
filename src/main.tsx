@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./app/layout";
 import HomePage from "./app/home/page";
 import BusPage, { busLoader } from "./app/bus/page";
-import SearchPage from "./app/search/page";
+import SearchPage, { searchLoader } from "./app/search/page";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +24,7 @@ const router = createBrowserRouter([
       {
         path: "/search",
         element: <SearchPage />,
+        loader: searchLoader,
       },
     ],
   },
