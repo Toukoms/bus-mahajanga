@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
     <footer className="text-center text-gray-800/80 dark:text-gray-400/80 pb-2">
-      © Copyright 2023 - LoveTech{" "}
+      Copyright (c) 2024 LoveTech - {" "}
       <span>
-        (code source{" "}
+        code source{" "}
         <a
           href="https://github.com/Toukoms/bus-mahajanga"
           target="_blank"
@@ -11,7 +11,6 @@ const Footer = () => {
         >
           here
         </a>
-        )
       </span>
     </footer>
   );
