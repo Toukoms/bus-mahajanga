@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  height: 100%;
-}
-
 :root {
   --background: 200 227 235;
   --foreground: 0 0 0;
@@ -28,8 +23,17 @@ body {
 }
 
 body {
+  height: 100dvh;
+  overflow-y: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: rgb(var(--background));
   color: rgb(var(--foreground));
+  min-height: 100dvh;
   overflow-x: hidden;
 }
 

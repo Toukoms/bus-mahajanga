@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className="flex justify-between items-center h-[32rem] gap-4 px-2 lg:px-12 xl:px-20 py-24 w-[100vw-3rem]">
+    <div className="flex justify-between items-center md:h-[32rem] gap-4 px-2 lg:px-12 xl:px-20 pt-12 md:py-24 w-[100vw-3rem]">
       <div className="max-w-lg md:max-w-xl flex flex-col gap-4">
         <h1 className="text-3xl">
           Bienvenu sur <b>BusMj</b>
@@ -30,7 +30,7 @@ const HomePage = () => {
         <img
           src="/assets/bus.png"
           alt=" "
-          className="absolute top-0 left-0 w-full h-full object-cover object-left"
+          className="absolute top-0 left-0 hidden md:block w-full md:h-full object-cover object-left"
         />
       </div>
     </div>
