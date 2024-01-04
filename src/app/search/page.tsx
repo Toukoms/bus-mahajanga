@@ -59,7 +59,7 @@ const SearchPage = () => {
             Chercher
           </button>
         </form>
-        <div className="flex-1 flex justify-center items-center gap-4 bg-white/40 dark:bg-slate-600/40 flex-wrap rounded-sm w-full min-h-48 p-2 px-4">
+        <div className="flex-1 flex justify-center items-center gap-4 bg-white/40 dark:bg-slate-600/40 flex-wrap rounded-sm w-full min-h-48 py-8 md:py-2 px-4">
           {bus !== null ? (
             bus.length !== 0 ? (
               bus.map((b) => (

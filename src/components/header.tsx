@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center px-8 md:px-8 pt-4 pb-3 bg-primary">
+    <header className="flex justify-between items-center px-8 md:px-8 pt-4 pb-3 bg-primary sticky z-30">
       <Link to="/" className="text-3xl md:text-4xl font-bold">
         BusMJ
       </Link>
@@ -34,7 +34,7 @@ const Header = () => {
       </button>
 
       <nav
-        className={`absolute top-0 left-1/2 w-1/2 h-[100dvh] flex md:hidden flex-col gap-4 px-4 pt-12 text-xl font-semibold transition-all duration-300 bg-green-400 ${
+        className={`absolute top-0 left-1/2 w-1/2 h-[100dvh] z-50 flex md:hidden flex-col gap-4 px-4 pt-20 text-xl font-semibold transition-all duration-300 bg-yellow-400 ${
           !open ? "translate-x-full" : "translate-x-0"
         }`}
       >
@@ -46,11 +46,16 @@ const Header = () => {
         </button>
         <Link
           to="/search"
+          onClick={toggleOpen}
           className="hover:border-b border-foreground mb-[0.2px]"
         >
           Chercher des bus
         </Link>
-        <Link to="/bus" className="hover:border-b border-foreground mb-[0.2px]">
+        <Link
+          to="/bus"
+          onClick={toggleOpen}
+          className="hover:border-b border-foreground mb-[0.2px]"
+        >
           Tous les bus
         </Link>
       </nav>
