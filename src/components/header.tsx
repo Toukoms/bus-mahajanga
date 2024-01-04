@@ -34,7 +34,7 @@ const Header = () => {
       </button>
 
       <nav
-        className={`absolute top-0 left-1/2 w-1/2 h-[100dvh] z-50 flex md:hidden flex-col gap-4 px-4 pt-20 text-xl font-semibold transition-all duration-300 bg-yellow-400 ${
+        className={`absolute top-0 left-1/2 w-1/2 h-[100dvh] z-50 flex md:hidden flex-col gap-4 px-4 pt-20 text-xl font-semibold transition-all duration-300 bg-yellow-400/80 shadow-xl backdrop-blur-sm  ${
           !open ? "translate-x-full" : "translate-x-0"
         }`}
       >

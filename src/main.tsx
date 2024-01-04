@@ -6,11 +6,13 @@ import RootLayout from "./app/layout";
 import HomePage from "./app/home/page";
 import BusPage, { busLoader } from "./app/bus/page";
 import SearchPage, { searchLoader } from "./app/search/page";
+import ErrorPage from "./app/error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
